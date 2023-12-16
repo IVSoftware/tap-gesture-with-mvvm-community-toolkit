@@ -11,8 +11,9 @@ namespace tap_gesture_with_mvvm_community_toolkit
     partial class SearchLoadingListVM : ObservableObject
     {
         [RelayCommand]
-        private void CounterButtonClick(object param)
-        { 
+        private async Task CounterButtonClick(object param)
+        {
+            await Task.Delay(1000);
         }
     }
 }
